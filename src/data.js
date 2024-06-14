@@ -30,7 +30,7 @@ export const data = [
   },
   {
     id: 2,
-    images: [arihant3, arihant1, arihant2, arihant4],
+    images: [arihant2, arihant3, arihant1, arihant4],
     name: "VGJ- Arihant", // Array of image URLs
     rent: [
       { occupancy: "Double Occupancy", price: "₹27,000/mo*" },
@@ -38,7 +38,7 @@ export const data = [
     ],
     houseType: "Hostel", // Example house type
     price: 22000, // Example price
-    location: "Andheri West", // Example location
+    location: "Vile Parle", // Example location
     gender: "Female", // Example gender
     messAvailable: "Yes", // Example mess availability
     furnished: "Fully-furnished",

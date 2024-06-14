@@ -91,6 +91,9 @@
   }
 
   @media (max-width: 767px) {
+    .image-slider img {
+      height: 350px; /* Adjust the height for mobile view as needed */
+    }
     .fullscreen-overlay img {
       max-width: 90%;
       max-height: 90%;
