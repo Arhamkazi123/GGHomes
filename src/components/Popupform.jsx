@@ -6,7 +6,7 @@ import { data } from "../data.js";
 
 const customStyles = {
   content: {
-    top: "45%",
+    top: "50%",
     left: "50%",
     right: "auto",
     bottom: "auto",
