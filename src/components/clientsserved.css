@@ -1,0 +1,49 @@
+.metric-container {
+  font-family: "Poppins", sans-serif;
+    margin: 25px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Increase box shadow for the container */
+  }
+  
+  .metric-box {
+    background-color: #D9A86C;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adjust box shadow for the individual metric boxes */
+    text-align: center;
+    width: calc(33.33% - 20px); /* Adjust the width and margin to fit three boxes */
+    margin: 10px;
+    transition: transform 0.3s, box-shadow 0.3s; /* Add transition for hover effect */
+  }
+  
+  .metric-box:hover {
+    transform: translateY(-5px); /* Move box up on hover */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* Change box shadow on hover */
+  }
+  
+  .metric-box h2 {
+    font-weight: bolder;
+    margin-top: 0;
+    font-size: 1.2rem;
+    color: #132F40;
+  }
+  
+  .metric-box p {
+    font-size: 1.5rem;
+    font-weight: bolder;
+    color: #132F40;
+  }
+
+  @media (max-width: 768px) {
+    .metric-container {
+      flex-direction: column; /* Stack boxes vertically on mobile */
+    }
+  
+    .metric-box {
+      width: 100%; /* Make boxes full width on mobile */
+      margin: 10px 0; /* Adjust margin for spacing on mobile */
+    }
+  }
+  

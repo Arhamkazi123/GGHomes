@@ -1,0 +1,48 @@
+.contact-container {
+    padding: 50px;
+    background-color: #2c3e50; /* Dark blue */
+    color: wheat; /* White text */
+  }
+
+  .badahumein{
+    font-size: 35px;
+  }
+  
+  .contact-form {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #6c3483; /* Purple border */
+    background-color: #fff; /* White background */
+  }
+  
+  input[type="text"].input-error,
+  textarea.input-error {
+    border-color: #c0392b; /* Red border for error */
+  }
+  
+  .error {
+    color: #c0392b; /* Red text for error message */
+  }
+
+  .btnhai{
+    background-color: #6c3483;
+  }
+
+
+  

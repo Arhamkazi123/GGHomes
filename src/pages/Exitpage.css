@@ -1,0 +1,35 @@
+.exit-page-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f0f0f0; /* Light gray background color */
+}
+
+.exit-page-heading {
+  font-size: 2.5rem;
+  color: #333; /* Dark gray text color */
+  margin-bottom: 20px;
+}
+
+.exit-page-message {
+  font-size: 1.2rem;
+  color: #666; /* Medium gray text color */
+  margin-bottom: 30px;
+}
+
+.exit-page-button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #007bff; /* Blue button color */
+  color: #fff; /* White text color */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.exit-page-button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}

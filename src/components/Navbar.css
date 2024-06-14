@@ -1,0 +1,204 @@
+.body{
+  background-color: white;
+}
+
+
+
+.navbar-title {
+  margin: 0;
+  color: #132F40;
+  font-family: "Poppins", sans-serif;
+  font-weight: 450;
+  overflow: hidden; /* Ensure text doesn't overflow */
+}
+
+/* Styling for each letter */
+.navbar-title span {
+  display: inline-block; /* Display letters inline */
+  opacity: 0; /* Initially hide letters */
+  transition: opacity 0.7s ease-in-out; /* Smooth transition */
+  font-weight: bolder;
+}
+
+/* Animation for each letter */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px); /* Move letters up slightly */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0); /* Bring letters back to their position */
+  }
+}
+
+/* Apply animation to each letter with a delay */
+.navbar-title span:nth-child(1) {
+  animation: fadeIn 0.5s ease forwards 0.1s; /* Delay for first letter */
+}
+
+.navbar-title span:nth-child(2) {
+  animation: fadeIn 0.5s ease forwards 0.2s; /* Delay for second letter */
+}
+
+.navbar-title span:nth-child(3) {
+  animation: fadeIn 0.5s ease forwards 0.3s; /* Delay for third letter */
+}
+
+.navbar-title span:nth-child(4) {
+  animation: fadeIn 0.5s ease forwards 0.4s; /* Delay for fourth letter */
+}
+
+.navbar-title span:nth-child(5) {
+  animation: fadeIn 0.5s ease forwards 0.5s; /* Delay for fifth letter */
+}
+
+.navbar-title span:nth-child(6) {
+  animation: fadeIn 0.5s ease forwards 0.6s; /* Delay for sixth letter */
+}
+
+.navbar-title span:nth-child(7) {
+  animation: fadeIn 0.5s ease forwards 0.7s; /* Delay for seventh letter */
+}
+
+.navbar-title span:nth-child(8) {
+  animation: fadeIn 0.5s ease forwards 0.8s; /* Delay for seventh letter */
+}
+
+
+.navbar {
+  padding: 20px;
+  font-size: 18px;
+  
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center; /* Vertically align the content */
+}
+
+.navbar-nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.nav-item {
+  margin-left: 20px;
+}
+
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: blue;
+  text-decoration: underline;
+}
+
+.navbar-logo {
+  width: 80px; /* Adjust the width as needed */
+  height: 80px; /* Adjust the height as needed */
+  margin-right: 10px; /* Add margin to separate the logo and text */
+}
+
+
+/* Styling for contact number button */
+.contact-button {
+  color: #132F40  !important;
+  background-color: #D9A86C ;
+  padding: 10px 15px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.phone-icon {
+  color: white;
+  margin-right: 5px;
+}
+
+.nav-link.home-button,
+.nav-link.contactus-button {
+  color: #d9a86c; /* Set text color */
+   /* Set background color */
+}
+
+
+/* General responsive styles */
+@media screen and (max-width: 768px) {
+  .navbar {
+    padding: 10px; /* Adjust padding for smaller screens */
+  }
+
+  .navbar-brand {
+    display: flex; /* Maintain horizontal layout */
+    align-items: center; /* Vertically align logo and title */
+    justify-content: space-between; /* Space logo and title to opposite sides */
+  }
+
+  .navbar-title {
+    margin-top: 0; /* Remove any top margin */
+    margin-right: 10px; /* Add margin to the right */
+  }
+
+  .navbar-toggler {
+    display: block; /* Show the toggle button on smaller screens */
+    padding: 5px; /* Adjust padding for toggle button */
+  }
+
+  .navbar-collapse {
+    display: none; /* Initially hide the navbar links */
+  }
+}
+
+/* Responsive behavior for the navbar collapse */
+@media screen and (max-width: 768px) {
+  .navbar-nav {
+    display: flex; /* Show the navbar links when toggled */
+    flex-direction: column; /* Stack links vertically */
+    width: 100%; /* Take full width of the screen */
+    margin-top: 10px; /* Add spacing after the toggle button */
+    background-color: #fff; /* Set background color for the navbar collapse */
+    position: absolute; /* Position the navbar collapse below the navbar */
+    top: 100%; /* Place it just below the navbar */
+    left: 0; /* Align it to the left of the screen */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Add a slight shadow */
+    padding: 10px; /* Add padding for the links */
+    z-index: 1; /* Ensure the navbar collapse is on top of other elements */
+  }
+
+  .navbar-collapse.show { /* Show the navbar collapse when toggled */
+    display: block;
+  }
+
+  .nav-item {
+    margin: 0; /* Remove margin between links */
+    padding: 10px; /* Add padding for links */
+  }
+
+  .nav-link {
+    text-align: center; /* Center the text of links */
+    width: 100%; /* Make links take full width */
+  }
+
+  /* Hide home link and contact button on mobile */
+  .nav-item {
+    display: none; /* Initially hide all links */
+  }
+
+  .navbar-brand {
+    display: flex; /* Maintain horizontal layout for logo and title */
+  }
+}
+
+
+
+
+

@@ -1,0 +1,119 @@
+/* Reset default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set the body background color and font */
+body {
+  background-color: white;
+  font-family: "Poppins", sans-serif !important;
+}
+
+/* Container for the accordion and image */
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  margin-left: 40px; /* Adjust left margin to shift the container towards left */
+}
+
+/* Styles for the text content */
+.image {
+  
+  flex: 1; /* Take up remaining space */
+}
+.text {
+  flex: 1; /* Take up remaining space */
+  font-family: "Poppins", sans-serif !important;
+}
+
+/* Styles for the image */
+
+/* Ensure the image fills its container */
+.imgabout {
+  margin-left: 80px;
+  width: 100%;
+  height: auto;
+}
+
+/* Accordion styles */
+.accordion-item {
+  border: 1px solid #132F40;
+  border-radius: 5px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.accordion-item.active {
+  color: white;
+  background-color: #132F40;
+}
+
+.accordion-title {
+  color: #132F40;
+  font-weight: 700;
+  font-size: 20px;
+  padding: 15px;
+  margin: 0;
+}
+.accordion-item.active .accordion-title {
+  color: #D9A86C; /* Change text color to yellow when active */
+}
+.accordion-content {
+  font-size: 18px;
+  padding: 15px;
+  display: none;
+}
+
+.accordion-item.active .accordion-content {
+  display: block;
+}
+
+
+@media (max-width: 768px) {
+
+  /* Stack text and image content vertically on mobile */
+  .container {
+    flex-direction: column;
+    margin-left: 0; /* Remove left margin on mobile */
+  }
+
+  /* Increase image width to fill most of the screen */
+  .image {
+    
+    flex: unset; /* Remove flex property for image */
+    width: 70%;
+    margin-right: auto;
+    margin-top: 20px; /* Add top margin for spacing */
+  }
+
+  /* Adjust text content styles for mobile */
+  .text {
+    order: 2;
+    flex: unset; /* Remove flex property for text */
+    margin-top: 20px; /* Add top margin for spacing */
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

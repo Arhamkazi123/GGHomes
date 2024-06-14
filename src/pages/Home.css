@@ -1,0 +1,286 @@
+/* General Styles */
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+.locationkochedo{
+  color: goldenrod !important;
+}
+
+.banner-image {
+  width: 98%;
+  height: auto;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.home-page {
+  padding: 20px;
+}
+
+.search-barhome {
+  margin-left: 10px;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.search-inputhome {
+  flex-grow: 1;
+  padding: 12px;
+  border: 2px solid #ccc;
+  border-radius: 25px;
+  font-size: 16px;
+  margin-right: 10px;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.btn-budget {
+  background-color: white;
+  color: #333;
+  border: 2px solid #333;
+  border-radius: 25px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-budget:hover {
+  background-color: #F2A950;
+  color: white;
+}
+
+.filter-container > * {
+  margin-right: 10px;
+}
+
+.price-range-slider,
+.gender-selection,
+.house-type-selection {
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-top: 25px;
+}
+
+.price-range-slider label,
+.gender-selection label,
+.house-type-selection label {
+  margin-right: 15px;
+}
+
+.price-range-slider input,
+.gender-selection select,
+.house-type-selection select,
+.range-slider {
+  padding: 8px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 100%;
+}
+
+.property-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.property-card {
+  flex-basis: calc(33.33% - 20px);
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: box-shadow 0.3s ease;
+}
+
+.property-card:hover {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.property-card h3 {
+  cursor: pointer;
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.property-card p {
+  font-size: 14px;
+  margin: 5px 0;
+  color: #666;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.schedule-visit-button,
+.view-details-button {
+  flex-grow: 1;
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  margin-right: 8px;
+  background-color: #132f40;
+  color: #fff;
+  border: none;
+  border-radius: 0 0 10px 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.schedule-visit-button:hover,
+.view-details-button:hover {
+  background-color: darkgoldenrod;
+}
+
+.image-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.property-image {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.property-card:hover .property-image {
+  transform: scale(1.05);
+}
+
+.footer {
+  margin: 0%;
+  padding: 0%;
+  width: 100%;
+}
+.modal-content {
+  color: #132f40;
+  font-weight: bolder;
+  
+}
+
+.whatsapp_float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  background-color: #25d366;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 100;
+}
+
+.whatsapp-icon {
+  margin-top: 16px;
+}
+
+.budget-selection {
+  display: flex;
+  align-items: center;
+  margin: 10px;
+}
+
+.budget-selection label {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  color: #333;
+  margin-right: 10px; /* Adjusts spacing between label and dropdown */
+}
+
+.dropdown-select {
+  width: 165px;
+  padding: 9px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 18px;
+  background-color: #fff;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.dropdown-select:focus {
+  border-color: #132f40;
+  box-shadow: 0 0 5px #132f40;
+  outline: none;
+}
+
+/* Optional: Additional styles to match the overall design */
+.budget-selection select option {
+  padding: 10px;
+  background-color: #f7f7f7;
+}
+
+
+
+@media (max-width: 768px) {
+  .whatsapp-icon {
+    margin-top: 10px;
+  }
+  .whatsapp_float {
+    width: 40px;
+    height: 40px;
+    bottom: 20px;
+    right: 10px;
+    font-size: 22px;
+  }
+  .banner-image {
+    width: 70%;
+    height: auto;
+    max-height: 250px; /* Reduce the maximum height for mobile devices */
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  .search-containerhome {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .search-inputhome {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .gender-selection,
+  .house-type-selection {
+    width: calc(90% - 5px);
+    margin-bottom: 10px;
+  }
+  .modal-dialog.modal-sm {
+    max-width: 65%; /* Set the maximum width of the modal */
+    
+  }
+
+  .budget-selection label {
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    color: #333;
+    margin-right: 10px; /* Adjusts spacing between label and dropdown */
+    
+  }
+
+  .budget-selection {
+    order: 3; /* Ensures the budget selection comes last in mobile view */
+    width: 100%; /* Makes the dropdown take full width */
+  }
+}
+
+

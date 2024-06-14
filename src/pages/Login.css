@@ -1,0 +1,167 @@
+* {
+  border: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  font-size: calc(16px + (24 - 16) * (100vw - 320px) / (1920 - 320));
+}
+
+body, button, input, select {
+  font: 1em Hind, sans-serif;
+  line-height: 1.5em;
+}
+
+body, input, select {
+  color: #171717;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  height: 100vh;
+}
+
+/* Search Container */
+.search-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 20px;
+  height: 600px; /* Set a fixed height for the search container */
+  overflow: hidden; /* Hide overflow to contain the background images */
+  animation: slideshow 15s infinite;
+  background-size: cover; /* Ensure the background images cover the entire container */
+  background-image: url('../images/bg1.jpeg');
+}
+
+
+
+.search-bar {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  position: relative; /* Set position to relative for absolute positioning of the button */
+}
+
+.search-input {
+  flex-grow: 1;
+  padding: 15px;
+  border: 2px solid #ccc;
+  border-radius: 25px;
+  font-size: 18px;
+  margin-right: 10px;
+  background-color: rgba(255, 255, 255, 0.8); /* Add background color for input field */
+}
+
+.search-icon {
+  font-size: 18px;
+  color: #333;
+  cursor: pointer;
+  position: absolute;
+  right: 10px; /* Position the search icon to the right */
+  background-color:#0056b3; /* Set background color for the search button */
+  padding: 10px; /* Add padding for the search button */
+  border: none; /* Remove border */
+  border-radius: 50%; /* Make the button round */
+  transition: background-color 0.3s ease; /* Add transition for hover effect */
+}
+
+.search-icon:hover {
+  background-color: #45a049; /* Change background color on hover */
+}
+
+
+/* Modal Styles */
+.ReactModal__Overlay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.ReactModal__Content {
+  position: relative;
+  border: 1px solid #ccc;
+  background: #fff;
+  overflow: auto;
+  border-radius: 4px;
+  outline: none;
+  padding: 20px;
+  max-width: 400px;
+  margin: 20px;
+}
+
+.ReactModal__Content input,
+.ReactModal__Content button,
+.ReactModal__Content select {
+  margin-bottom: 10px;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.ReactModal__Content button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.ReactModal__Content button:hover {
+  background-color: #0056b3;
+}
+
+/* Close button styles */
+.ReactModal__Content .modal-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 0;
+  font-size: 20px;
+  line-height: 1;
+  text-align: center;
+  color: #000;
+  width: 30px;
+  height: 30px;
+}
+
+.ReactModal__Content .modal-close:hover {
+  color: #007bff;
+}
+
+
+
+@media (max-width: 768px) {
+  .search-container {
+    height: 260px; /* Allow height to adjust based on content */
+    width: 100%;
+    padding: 10px; /* Adjust padding */
+    background-size: cover; /* Ensure the image covers the entire container */
+    background-position: center; /* Center the image */
+  }
+  .search-bar {
+    margin-top: 70px;
+    width: 66%;
+    display: flex;
+    align-items: center;
+    position: relative; /* Set position to relative for absolute positioning of the button */
+  }
+
+
+  .whatsapp-icon {
+    font-size: 25px; /* Increase icon size for mobile */
+  }
+
+}
+
+
+

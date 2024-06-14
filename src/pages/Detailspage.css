@@ -1,0 +1,196 @@
+.detailspage-container {
+  color: #132F40;
+  
+  width: 100%;
+  display: flex;
+  justify-content: left;
+  padding: 20px 0; /* Adjust top and bottom padding */
+}
+
+.property-details {
+  margin-left: 100px;
+  width: 100%;
+  max-width: 800px;
+  border-radius: 10px;
+  padding: 30px;
+}
+
+/* Remove box shadow */
+.property-details {
+  box-shadow: none;
+}
+
+/* Align everything left */
+.property-details h2,
+.property-details p {
+  text-align: left;
+  font-weight: bold;
+}
+
+/* Adjust property images */
+.property-images {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; /* Three columns */
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.property-images img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.property-images img:hover {
+  transform: scale(1.05);
+}
+
+/* Adjust WhatsApp floating button */
+.whatsapp_float {
+  bottom: 20px; /* Adjust bottom spacing */
+  right: 20px; /* Adjust right spacing */
+}
+
+/* Adjust responsive WhatsApp floating button */
+@media screen and (max-width: 767px) {
+  .whatsapp_float {
+    width: 40px;
+    height: 40px;
+    bottom: 10px; /* Adjust bottom spacing */
+    right: 10px; /* Adjust right spacing */
+  }
+  .property-images {
+    grid-template-columns: 1fr 1fr; /* Two columns */
+  }
+}
+
+/* Adjust overview grid */
+.overview-grid {
+  display: flex;
+}
+
+.overview-grid > div {
+  flex: 1;
+}
+
+.amenities-grid {
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap to the next line */
+  gap: 10px; /* Add gap between items */
+}
+
+.amenity-item {
+  display: flex;
+  align-items: center; /* Center items vertically */
+}
+
+.amenity-item p {
+  margin-top: 14px;
+  margin-left: 10px; /* Add space between icon and text */
+}
+
+.amenities-grid > div {
+  flex: 1 45%; /* Each column takes 45% width */
+  margin-bottom: 10px; /* Add bottom margin for spacing */
+}
+
+@media screen and (max-width: 767px) {
+  .amenities-grid > div {
+    flex: 1 100%; /* Each column takes 100% width on smaller screens */
+  }
+}
+
+.book-now-button {
+  margin-top: 40px;
+  background-color: #f2a950;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.book-now-button:hover {
+  background-color: #e18f3c;
+}
+.rent-structure {
+  display: flex; /* Use flexbox to arrange items */
+  justify-content: space-between; /* Distribute items evenly along the main axis */
+  width: 100%; /* Ensure the container takes up the full width */
+}
+
+.rent-item {
+  width: calc(50% - 10px); /* Set the width of each column */
+  /* Subtracting 10px accounts for any margin or padding */
+}
+
+.column {
+  flex: 1;
+}
+
+@media screen and (max-width: 768px) {
+  /* Rent structure */
+  .rent-structure {
+    flex-direction: row; /* Display in two columns */
+    flex-wrap: wrap; /* Allow items to wrap */
+  }
+  .rent-item {
+    width: calc(50% - 10px); /* Set width for two columns */
+  }
+
+  /* Overview */
+  .overview-grid > div {
+    width: calc(50% - 10px); /* Display in two columns */
+    margin-right: 10px; /* Add space between columns */
+  }
+
+  .amenities-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Add gap between items */
+  }
+  
+  .amenities-grid > div {
+    flex: 1 45%; /* Each column takes 45% width */
+    margin-bottom: 10px; /* Add bottom margin for spacing */
+  }
+
+ 
+
+  /* Popup for LeaveDetails */
+  .leave-details-sidebar {
+    position: fixed; /* Position as fixed for popup */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    z-index: 999; /* Ensure it's on top of other content */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .property-details {
+    margin-left: 0; /* Remove left margin */
+    width: 90%; /* Adjust width to fit smaller screens */
+    padding: 20px; /* Adjust padding */
+  }
+  .book-now-button {
+    margin: 0 auto; /* Center the button horizontally */
+    display: block; /* Ensure it takes up the full width */
+  }
+
+  .leave-details-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 90%; /* Adjust width */
+    max-height: 90%; /* Adjust height */
+    overflow-y: auto; /* Enable scrolling if content exceeds height */
+  }
+}
+

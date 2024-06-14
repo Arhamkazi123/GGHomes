@@ -1,0 +1,175 @@
+/* PopupForm.css */
+
+/* General Modal Styles */
+.ReactModal__Overlay {
+  background-color: rgba(0, 0, 0, 0.75) !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.title-logo {
+  width: 80px; /* Adjust size as needed */
+  height: 80px; /* Adjust size as needed */
+  margin-right: 30px; /* Space between image and text */
+}
+
+
+.ReactModal__Content {
+  font-family: "Poppins", sans-serif;
+  position: relative;
+  background: #ffffff;
+  border-radius: 8px;
+  max-width: 500px;
+  width: 90%;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 0.3s ease-in-out;
+  outline: none;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Content Styles */
+.popup-content {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.header-text {
+  color: #132f40;
+  font-weight: bolder;
+  font-size: 40px; /* Adjust size as needed */
+}
+
+/* Input and Select Styles */
+.popup-content input[type="text"],
+.popup-content select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.popup-content input[type="text"]:focus,
+.popup-content select:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Error Message Styles */
+.error {
+  color: #e74c3c;
+  font-size: 14px;
+  margin-top: -10px;
+}
+
+/* Button Styles */
+.popup-content button {
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  background-color: #132f40;
+  color: #ffffff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.popup-content button:hover {
+  background-color: #D9A86C;
+}
+
+.close-button {
+  position: absolute !important;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.close-icon {
+  font-size: 12px  !important; /* Adjust the size as needed */
+  color: #000; /* Adjust the color as needed */
+}
+
+/* Media Queries for Mobile Responsiveness */
+@media screen and (max-width: 768px) {
+  /* Adjust content layout for smaller screens */
+  .popup-content {
+    flex-wrap: wrap; /* Wrap content to fit smaller width */
+  }
+
+  .header-container {
+    margin-top: 10px;
+    flex-direction: row; /* Ensure logo and title stay on the same line */
+    align-items: center; /* Center content vertically */
+    justify-content: center; /* Center content horizontally */
+  }
+
+  .title-logo {
+    width: 60px; /* Reduce logo size */
+    height: 60px; /* Reduce logo size */
+    margin-right: 5px; /* Reduce margin for smaller screens */
+  }
+
+  .popup-content input[type="text"],
+  .popup-content select {
+    font-size: 15px; /* Further reduce font size for readability */
+    padding: 8px; /* Reduce padding for smaller touch targets */
+  }
+
+  .popup-content button {
+    padding: 8px 15px; /* Reduce button padding for smaller screens */
+    font-size: 12px; /* Further reduce button font size */
+  }
+
+  .close-button {
+    top: 5px; /* Move close button slightly up for better reach */
+    right: 5px; /* Move close button slightly right for better reach */
+  }
+
+  .close-icon {
+    font-size: 16px !important; /* Increase close icon size for better visibility */
+  }
+  .header-text {
+    font-size: 30px; /* Adjust size as needed */
+    text-align: center; /* Center text on smaller screens */
+  }
+  .popup-content input[type="text"],
+  .popup-content select {
+    font-size: 15px; /* Decrease font size for readability */
+    padding: 5px; /* Decrease padding for smaller touch targets */
+    width: calc(100% - 20px); /* Adjust width to fit smaller screens */
+    max-width: calc(100% - 20px);
+  }
+
+  /* Reduce overall content width for a more compact popup */
+  .ReactModal__Content {
+    max-width: 78%;
+    width: calc(120vw - 50px); /* Use viewport width minus margins */
+  }
+  
+}
+
