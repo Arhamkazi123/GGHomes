@@ -35,7 +35,7 @@ const Navbar = () => {
         <ul className="navbar-nav">
           <li className="nav-item">
             <Link to="/" className="nav-link home-button">
-              Gotemere
+              Home
             </Link>
           </li>
 
