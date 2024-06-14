@@ -6,8 +6,7 @@ import Detailspage from "./pages/Detailspage.jsx";
 import Leavedetails from "./pages/Leavedetails.jsx";
 import Exitpage from "./pages/Exitpage.jsx";
 import Handlepopprops from "./pages/Handlepopprops.jsx";
-
-import Contact from "./pages/Contact.jsx";
+import Flats from "./pages/Flats.jsx";
 
 function App() {
   return (
@@ -18,7 +17,7 @@ function App() {
         <Route path="/details" element={<Detailspage />} />
         <Route path="/leavedetails" element={<Leavedetails />} />
         <Route path="/devprops" element={<Handlepopprops />} />
-
+        <Route path="/flats" element={<Flats />} />
         <Route path="*" element={<Exitpage />} />
       </Routes>
     </BrowserRouter>

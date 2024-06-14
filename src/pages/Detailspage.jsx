@@ -139,28 +139,33 @@ const Detailspage = () => {
           <div className="overview-grid">
             <div>
               <p>
-                <strong>House Type:</strong> {property.houseType}
+                <strong style={{ color: "#F2BA52" }}>House Type:</strong>{" "}
+                {property.houseType}
               </p>
               <p>
-                <strong>Furnished:</strong> {property.furnished}
+                <strong style={{ color: "#F2BA52" }}>Furnished:</strong>{" "}
+                {property.furnished}
               </p>
             </div>
             <div>
               <p>
-                <strong>Gender:</strong> {property.gender}
+                <strong style={{ color: "#F2BA52" }}>Gender:</strong>{" "}
+                {property.gender}
               </p>
               <p>
-                <strong>Mess Available:</strong> {property.messAvailable}
+                <strong style={{ color: "#F2BA52" }}>Mess Available:</strong>{" "}
+                {property.messAvailable}
               </p>
             </div>
           </div>
           <div>
             <p>
-              <strong>Meals included:</strong> {property.Meals}
+              <strong style={{ color: "#F2BA52" }}>Meals included:</strong>{" "}
+              {property.Meals}
             </p>
           </div>
           <h2 style={{ marginTop: "50px", marginBottom: "30px" }}>
-            About this place
+            About <span style={{ color: "#F2BA52" }}>this</span> place
           </h2>
           <p>{property.About}</p>
 

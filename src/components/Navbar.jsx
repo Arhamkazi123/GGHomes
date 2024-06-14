@@ -38,6 +38,11 @@ const Navbar = () => {
               Home
             </Link>
           </li>
+          <li className="nav-item">
+            <Link to="/flats" className="nav-link home-button">
+              Flats
+            </Link>
+          </li>
 
           <li className="nav-item">
             {/* Contact number button */}
