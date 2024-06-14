@@ -167,7 +167,7 @@
 
   /* Reduce overall content width for a more compact popup */
   .ReactModal__Content {
-    max-width: 100%;
+    max-width: 90%;
     width: calc(120vw - 50px); /* Use viewport width minus margins */
   }
   

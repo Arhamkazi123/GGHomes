@@ -38,7 +38,7 @@ export const data = [
     ],
     houseType: "Hostel", // Example house type
     price: 22000, // Example price
-    location: "Vile Parle", // Example location
+    location: "Andheri West", // Example location
     gender: "Female", // Example gender
     messAvailable: "Yes", // Example mess availability
     furnished: "Fully-furnished",
