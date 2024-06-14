@@ -13,6 +13,11 @@ import { GiWashingMachine } from "react-icons/gi";
 import LeaveDetails from "../pages/Leavedetails.jsx"; // Import the LeaveDetails component
 import { FaBed } from "react-icons/fa";
 import Footer from "../pages/Footerpage/Footer.jsx";
+import { AiFillThunderbolt } from "react-icons/ai";
+import { FaHireAHelper } from "react-icons/fa";
+import { MdLocalLaundryService } from "react-icons/md";
+import { FaElevator } from "react-icons/fa6";
+import { GiCctvCamera } from "react-icons/gi";
 
 const Detailspage = () => {
   const [property, setProperty] = useState(null);
@@ -55,6 +60,11 @@ const Detailspage = () => {
     "A/C": <GiCooler />,
     RO: <FaHandHoldingWater />,
     "Modular Kitchen": <FaKitchenSet />,
+    "Electricity included": <AiFillThunderbolt />,
+    "Housekeeping included": <FaHireAHelper />,
+    Laundry: <MdLocalLaundryService />,
+    Elevator: <FaElevator />,
+    CCTV: <GiCctvCamera />,
   };
 
   return (
@@ -129,20 +139,25 @@ const Detailspage = () => {
           <div className="overview-grid">
             <div>
               <p>
-                <strong>House Type:</strong> PG
+                <strong>House Type:</strong> {property.houseType}
               </p>
               <p>
-                <strong>Furnished:</strong> Fully-furnished
+                <strong>Furnished:</strong> {property.furnished}
               </p>
             </div>
             <div>
               <p>
-                <strong>Gender:</strong> Male
+                <strong>Gender:</strong> {property.gender}
               </p>
               <p>
-                <strong>Mess Available:</strong> Yes
+                <strong>Mess Available:</strong> {property.messAvailable}
               </p>
             </div>
+          </div>
+          <div>
+            <p>
+              <strong>Meals included:</strong> {property.Meals}
+            </p>
           </div>
           <h2 style={{ marginTop: "50px", marginBottom: "30px" }}>
             About this place

@@ -1,149 +1,64 @@
-import image1 from "./images/image1.jpg";
-import image2 from "./images/image2.jpg";
-import image3 from "./images/image3.jpg";
-import image4 from "./images/image4.jpg";
-import image5 from "./images/image5.jpg";
-import image6 from "./images/image6.jpg";
-import image7 from "./images/image7.jpg";
-import image8 from "./images/image8.jpg";
+import VGJ1 from "./images/VGJ1.jpeg";
+import VGJ2 from "./images/VGJ2.jpeg";
+import VGJ3 from "./images/VGJ3.jpeg";
+import VGJ4 from "./images/VGJ4.jpeg";
+import arihant1 from "./images/arihant1.jpeg";
+import arihant2 from "./images/arihant2.jpeg";
+import arihant3 from "./images/arihant3.jpeg";
+import arihant4 from "./images/arihant4.jpeg";
 
 export const data = [
   {
     id: 1,
-    images: [image1, image2, image3, image4, image5],
-    name: "Powai Vihar Complex", // Array of image URLs
+    images: [VGJ2, VGJ1, VGJ3, VGJ4],
+    name: "VGJ- Tribhuvan", // Array of image URLs
     rent: [
-      { occupancy: "Double Occupancy", price: "₹28,699/mo*" },
-      { occupancy: "Triple Occupancy", price: "₹31,099/mo*" },
+      { occupancy: "Single Occupancy", price: "₹55,000/mo*" },
+      { occupancy: "Double Occupancy", price: "₹45,000/mo*" },
+      { occupancy: "Triple Occupancy", price: "₹35,000/mo*" },
     ],
-    houseType: "PG", // Example house type
-    price: 700, // Example price
+    houseType: "Hostel", // Example house type
+    price: 35000, // Example price
     location: "Vile Parle", // Example location
-    gender: "Male", // Example gender
+    gender: "Female", // Example gender
     messAvailable: "Yes", // Example mess availability
     furnished: "Fully-furnished",
+    Meals: "3 times",
     About:
-      "Rent a 2BHK in Vile Parle West. This flat is located in a very convenient location, NMIMS is just 1km away and train station is also very near. This flat in Mumbai is also fully furnished",
+      " This flat is located in a very convenient location, 600m from Vile Parle train station, 1km from NMIMS College, Mumbai. This flat in Mumbai is also fully furnished",
     amen: [
-      "Parking",
-      "Cupboard",
-      "Attached Bathroom",
-      "Washing Machine",
-      "Geyser",
       "A/C",
-      "RO",
-      "Modular Kitchen",
+      "Electricity included",
+      "Housekeeping included",
+      "Laundry",
+      "Elevator",
+      "CCTV",
     ],
   },
   {
     id: 2,
-    images: [image4, image5, image6], // Array of image URLs
+    images: [arihant3, arihant1, arihant2, arihant4],
+    name: "VGJ- Arihant", // Array of image URLs
+    rent: [
+      { occupancy: "Double Occupancy", price: "₹27,000/mo*" },
+      { occupancy: "Quad Occupancy", price: "₹22,000/mo*" },
+    ],
     houseType: "Hostel", // Example house type
-    name: "Raheja Vihar Complex ", // Array of image URLs
-    rent: [
-      { occupancy: "Double Occupancy", price: "₹28,699/mo*" },
-      { occupancy: "Quad Occupancy", price: "₹31,099/mo*" },
-    ],
-    price: 1500, // Example price
-    location: "Bandra", // Example location
+    price: 22000, // Example price
+    location: "Andheri West", // Example location
     gender: "Female", // Example gender
-    messAvailable: "No", // Example mess availability
+    messAvailable: "Yes", // Example mess availability
     furnished: "Fully-furnished",
+    Meals: "2 times",
     About:
-      "Rent a 2BHK in Vile Parle West. This flat is located in a very convenient location, NMIMS is just 1km away and train station is also very near. This flat in Mumbai is also fully furnished",
+      "This flat is located in a very convenient location, 300m from Andheri train station, 2km from NMIMS College, Mumbai. This flat in Mumbai is also fully furnished",
     amen: [
-      "Parking",
-      "Cupboard",
-      "Attached Bathroom",
-      "Washing Machine",
-      "Geyser",
       "A/C",
-      "RO",
-      "Modular Kitchen",
-    ],
-  },
-  {
-    id: 3,
-    images: [image7, image8], // Array of image URLs
-    houseType: "PG", // Example house type,
-    name: "Powai Vihar Complex 3", // Array of image URLs
-    rent: [
-      { occupancy: "Single Occupancy", price: "₹18,699/mo*" },
-      { occupancy: "Double Occupancy", price: "₹28,699/mo*" },
-      { occupancy: "Triple Occupancy", price: "₹31,099/mo*" },
-    ],
-    price: 3500, // Example price
-    location: "Bandra", // Example location
-    gender: "Unisex", // Example gender
-    messAvailable: "No", // Example mess availability
-    furnished: "Fully-furnished",
-    About:
-      "Rent a 2BHK in Vile Parle West. This flat is located in a very convenient location, NMIMS is just 1km away and train station is also very near. This flat in Mumbai is also fully furnished",
-    amen: [
-      "Parking",
-      "Cupboard",
-      "Attached Bathroom",
-      "Washing Machine",
-      "Geyser",
-      "A/C",
-      "RO",
-      "Modular Kitchen",
-    ],
-  },
-  {
-    id: 4,
-    images: [image7, image8], // Array of image URLs
-    houseType: "PG", // Example house type,
-    rent: [
-      { occupancy: "Single Occupancy", price: "₹18,699/mo*" },
-      { occupancy: "Double Occupancy", price: "₹28,699/mo*" },
-      { occupancy: "Triple Occupancy", price: "₹31,099/mo*" },
-    ],
-    name: "Powai Vihar Complex 100", // Array of image URLs
-    price: 4500, // Example price
-    location: "Vile Parle", // Example location
-    gender: "Unisex", // Example gender
-    messAvailable: "No", // Example mess availability
-    furnished: "Fully-furnished",
-    About:
-      "Rent a 2BHK in Vile Parle West. This flat is located in a very convenient location, NMIMS is just 1km away and train station is also very near. This flat in Mumbai is also fully furnished",
-    amen: [
-      "Parking",
-      "Cupboard",
-      "Attached Bathroom",
-      "Washing Machine",
-      "Geyser",
-      "A/C",
-      "RO",
-      "Modular Kitchen",
-    ],
-  },
-  // Add more data objects as needed
-  {
-    id: 5,
-    images: [image5, image6], // Array of image URLs
-    houseType: "Hostel", // Example house type
-    name: "Arham Vihar ", // Array of image URLs
-    rent: [
-      { occupancy: "Double Occupancy", price: "₹28,699/mo*" },
-      { occupancy: "Quad Occupancy", price: "₹31,099/mo*" },
-    ],
-    price: 11500, // Example price
-    location: "Vile Parle", // Example location
-    gender: "Female", // Example gender
-    messAvailable: "No", // Example mess availability
-    furnished: "Fully-furnished",
-    About:
-      "Rent a 2BHK in Vile Parle West. This flat is located in a very convenient location, NMIMS is just 1km away and train station is also very near. This flat in Mumbai is also fully furnished",
-    amen: [
-      "Parking",
-      "Cupboard",
-      "Attached Bathroom",
-      "Washing Machine",
-      "Geyser",
-      "A/C",
-      "RO",
-      "Modular Kitchen",
+      "Electricity included",
+      "Housekeeping included",
+      "Laundry",
+      "Elevator",
+      "CCTV",
     ],
   },
 ];
