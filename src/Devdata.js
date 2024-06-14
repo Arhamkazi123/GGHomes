@@ -15,15 +15,15 @@ export const devdata = [
     messAvailable: "Yes", // Example mess availability
     furnished: "Fully-Furnished",
   },
-  {
-    id: 2,
-    images: [Devprop3, Devprop4],
-    name: "Arhamproperty 2", // Array of image URLs
-    houseType: "PG", // Example house type
-    price: 1500, // Example price
-    location: "Rajasthan", // Example location
-    gender: "Female", // Example gender
-    messAvailable: "Yes", // Example mess availability
-    furnished: "Fully-Furnished",
-  },
+  // {
+  //   id: 2,
+  //   images: [Devprop3, Devprop4],
+  //   name: "Arhamproperty 2", // Array of image URLs
+  //   houseType: "PG", // Example house type
+  //   price: 1500, // Example price
+  //   location: "Rajasthan", // Example location
+  //   gender: "Female", // Example gender
+  //   messAvailable: "Yes", // Example mess availability
+  //   furnished: "Fully-Furnished",
+  // },
 ];
