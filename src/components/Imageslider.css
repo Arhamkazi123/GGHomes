@@ -14,11 +14,12 @@
   
   .image-slider img {
     width: 100%;
+    height: 550px; /* Adjust the height as needed for uniformity */
     display: block;
-    border-radius: 8px; /* Add border radius for rounded corners */
+    border-radius: 8px;
     object-fit: cover; /* Ensure the image covers the container */
     object-position: center; /* Center the image */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition effect */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
   }
   
   .image-slider img:hover {

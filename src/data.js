@@ -26,14 +26,7 @@ export const data = [
     Meals: "3 times",
     About:
       " This flat is located in a very convenient location, 600m from Vile Parle train station, 1km from NMIMS College, Mumbai. This flat in Mumbai is also fully furnished",
-    amen: [
-      "A/C",
-      "Electricity included",
-      "Housekeeping included",
-      "Laundry",
-      "Elevator",
-      "CCTV",
-    ],
+    amen: ["A/C", "Electricity", "Housekeeping", "Laundry", "Elevator", "CCTV"],
   },
   {
     id: 2,
@@ -52,13 +45,6 @@ export const data = [
     Meals: "2 times",
     About:
       "This flat is located in a very convenient location, 300m from Andheri train station, 2km from NMIMS College, Mumbai. This flat in Mumbai is also fully furnished",
-    amen: [
-      "A/C",
-      "Electricity included",
-      "Housekeeping included",
-      "Laundry",
-      "Elevator",
-      "CCTV",
-    ],
+    amen: ["A/C", "Electricity", "Housekeeping", "Laundry", "Elevator", "CCTV"],
   },
 ];
