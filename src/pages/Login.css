@@ -189,6 +189,18 @@ body {
   .whatsapp-icon {
     font-size: 25px; /* Increase icon size for mobile */
   }
+  .flatbuttons {
+    flex-direction: column; /* Stack buttons vertically */
+    align-items: center; /* Center buttons horizontally */
+    gap: 15px; /* Reduce the gap between buttons */
+    margin: 10px 0; /* Adjust vertical margin */
+  }
+
+  .flatbutton {
+    width: 80%; /* Make buttons take up 80% of the container's width */
+    font-size: 1em; /* Adjust font size for smaller screens */
+    padding: 12px 20px; /* Adjust padding for smaller screens */
+  }
 
 }
 
