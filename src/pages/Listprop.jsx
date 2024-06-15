@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import Navbar from "../components/Navbar.jsx";
 import Footer from "../pages/Footerpage/Footer.jsx";
-import "./Listprop.css";
 import newgghoes from "../images/newgghoes.jpg";
+import "./Listprop.css";
 
 const Listprop = () => {
   const [formData, setFormData] = useState({
@@ -79,7 +79,18 @@ const Listprop = () => {
 
     if (validateForm()) {
       // Construct the WhatsApp message
-      const message = `My Name is ${formData.name}, Property Type: ${formData.propertyType}, Requirement: To ${formData.requirement} , Tenant Type: ${formData.subOption} Address: ${formData.address} Phone: ${formData.phone}`;
+      const message = `
+Name: ${formData.name}
+Property Type: ${formData.propertyType}
+Requirement: To ${formData.requirement}
+${
+  formData.requirement === "rent"
+    ? ` Preferred Tenant: ${formData.subOption}`
+    : ""
+}
+Address: ${formData.address}
+Phone: ${formData.phone}
+`;
 
       // Generate WhatsApp link
       const whatsappLink = `https://wa.me/918302362370/?text=${encodeURIComponent(
@@ -180,7 +191,7 @@ const Listprop = () => {
           {formData.propertyType === "residential" &&
             formData.requirement === "rent" && (
               <div className="form-group">
-                <label>Tenant Type:</label>
+                <label>Preferred Tenant</label>
                 <select
                   name="subOption"
                   value={formData.subOption}
