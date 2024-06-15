@@ -1,0 +1,152 @@
+.form-container {
+    font-family: "Poppins", sans-serif;
+    color: #132f40;
+    width: 80%;
+    max-width: 600px;
+    margin: 50px auto 0; /* Adjust margin to center vertically and horizontally */
+    padding: 20px;
+    background-color: white; /* Background color of the form */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  .header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    }
+    
+    .header-image {
+    width: 100px; 
+    height: auto;
+    margin-right: 20px; 
+    }
+  
+  .form-container h1 {
+    font-size: 50px;
+    text-align: center;
+    color: #132f40; /* Header text color */
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+    display: flex; /* Flex display to align label and input on the same line */
+    align-items: center;
+  }
+  
+  .form-group label {
+    margin-right: 20px;
+    width: 150px; /* Fixed width for the labels */
+    font-weight: bold;
+    color: #132f40; /* Label text color */
+  }
+  
+  .form-group input[type="text"],
+.form-group input[type="tel"],
+.form-group select {
+  flex-grow: 1; /* Make input fields and select grow to fill available space */
+  padding: 8px; /* Adjust padding for input fields and select */
+  border: 1px solid #d9a86c; /* Border color */
+  border-radius: 4px;
+  background-color: white; /* Input background color */
+  color: #132f40; /* Input text color */
+}
+  
+  .form-group input[type="radio"] {
+    margin-right: 10px;
+  }
+  
+  .radio-group,
+  .wants-to-group {
+    display: flex;
+    align-items: center;
+  }
+  
+  .radio-group label,
+  .wants-to-group label {
+    margin-right: 10px; /* Adjust margin between radio buttons */
+  }
+  
+  button[type="submit"] {
+    width: 100%;
+    padding: 10px 0;
+    background-color: #d9a86c; /* Button background color */
+    color: #132f40; /* Button text color */
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  button[type="submit"]:hover {
+    background-color:#B57C3E ; /* Darken the button background on hover */
+  }
+  
+  .error-message {
+    color: red; /* Red color for error messages */
+    font-size: 20px; /* Adjust font size as needed */
+    margin-top: 5px; /* Space above the error message */
+  }
+  
+  .form-group {
+    flex-direction: row; /* Stack labels and inputs vertically */
+    align-items: flex-start; /* Align items to the start */
+  }
+
+  .radio-group label,
+  .wants-to-group label {
+    margin-right: 20px; /* Adjust margin between radio buttons */
+  }
+
+  .radio-group,
+  .wants-to-group {
+    display: flex;
+    flex-wrap: wrap; /* Ensure items wrap to the next line if necessary */
+    align-items: center; /* Align items vertically */
+  }
+
+  .radio-group input[type="radio"],
+  .wants-to-group input[type="radio"] {
+    margin-right: 5px; /* Adjust margin between radio buttons */
+  }
+  
+  .form-group .error-message {
+    position: absolute;
+    bottom: -50px; /* Adjust distance from input field */
+    left: 0;
+  }
+
+  @media (max-width: 768px) {
+    .form-container {
+      width: 90%; /* Adjust width for smaller screens */
+      padding: 15px; /* Reduce padding for smaller screens */
+      margin-top: 50px; /* Adjust top margin for centering */
+    }
+  
+    .header h1 {
+      font-size: 36px; /* Decrease font size of header */
+    }
+  
+    .form-group {
+      flex-direction: column; /* Stack labels and inputs vertically */
+      align-items: flex-start; /* Align items to the start */
+    }
+  
+    .form-group label {
+      margin-bottom: 5px; /* Reduce margin bottom for labels */
+      width: 100%; /* Full width for labels */
+      text-align: left; /* Align labels to the left */
+    }
+  
+    .form-group input[type="text"],
+    .form-group input[type="tel"],
+    .form-group select {
+      width: 100%; /* Full width for inputs and select */
+    }
+  
+    .form-group .error-message {
+      margin-left: 20px;
+      bottom: -230px; /* Adjust distance from input field */
+    }
+    
+  }
+  
