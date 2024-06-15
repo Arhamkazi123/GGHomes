@@ -45,6 +45,14 @@ const LoginPage = () => {
     new Set(data.map((item) => item.location))
   );
 
+  const handlelist = () => {
+    navigate("/listprop");
+  };
+
+  const findflat = () => {
+    navigate("/findflat");
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
     setErrors({});
@@ -118,6 +126,15 @@ const LoginPage = () => {
           </form>
         </div>
       )}
+
+      <div className="flatbuttons">
+        <button className="flatbutton" onClick={handlelist}>
+          List your property
+        </button>
+        <button className="flatbutton" onClick={findflat}>
+          Find a flat
+        </button>
+      </div>
 
       <Popularproperties />
 

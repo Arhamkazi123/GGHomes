@@ -295,7 +295,9 @@ const Home = () => {
                     className="property-image"
                   />
                 </div>
-                <h2 className="h2title">{item.name}</h2>
+                <h2 className="h2title">
+                  {item.name}, {item.gender}
+                </h2>
                 <div
                   style={{
                     display: "flex",
@@ -315,7 +317,7 @@ const Home = () => {
                       fontWeight: "bolder",
                     }}
                   >
-                    {item.location}
+                    {item.location},{item.subloc}
                   </h3>
                 </div>
                 <p
@@ -381,6 +383,7 @@ const Home = () => {
                     />
                     <p
                       style={{
+                        fontSize: "20px",
                         marginRight: "40px",
                         color: "#132F40",
                         fontWeight: "bolder",
@@ -421,9 +424,11 @@ const Home = () => {
       <div className="footer">
         <Footer />
       </div>
+
       <a href="#" onClick={handleWhatsAppClick} className="whatsapp_float">
         <i className="fa-brands fa-whatsapp whatsapp-icon"></i>
       </a>
+
       <Modal
         isOpen={isModalOpen}
         onRequestClose={() => setIsModalOpen(false)}

@@ -10,7 +10,8 @@
 }
 
 body, button, input, select {
-  font: 1em Hind, sans-serif;
+  font-family: "Poppins", sans-serif;
+  font: 1em;
   line-height: 1.5em;
 }
 
@@ -136,6 +137,33 @@ body {
 
 .ReactModal__Content .modal-close:hover {
   color: #007bff;
+}
+
+
+.flatbuttons {
+  display: flex;
+  justify-content: center; /* Center the buttons horizontally */
+  gap: 30px; /* Add some space between the buttons */
+  margin: 20px 0; /* Add some vertical margin */
+}
+
+.flatbutton {
+  background-color: #D9A86C; /* Set background color */
+  color: white; /* Set text color */
+  font-size: 1.2em; /* Make the font size bigger */
+  padding: 15px 30px; /* Increase padding for a larger button */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Add slight rounding to corners */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  font-weight: bolder; /* Make text bold */
+  transition: background-color 0.3s ease, transform 0.5s ease, box-shadow 0.3s ease, color 0.3s ease;
+}
+
+.flatbutton:hover {
+  background-color: #f2ba52; /* Darken background color on hover */
+  color: #ffffff; /* Change text color on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+  transform: scale(1.07); /* Slightly scale up the button on hover */
 }
 
 

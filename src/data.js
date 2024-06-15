@@ -20,7 +20,8 @@ export const data = [
     houseType: "Hostel", // Example house type
     price: 35000, // Example price
     location: "Vile Parle", // Example location
-    gender: "Female", // Example gender
+    subloc: "1km from NMIMS",
+    gender: "Girls", // Example gender
     messAvailable: "Yes", // Example mess availability
     furnished: "Fully-furnished",
     Meals: "3 times",
@@ -39,7 +40,8 @@ export const data = [
     houseType: "Hostel", // Example house type
     price: 22000, // Example price
     location: "Andheri West", // Example location
-    gender: "Female", // Example gender
+    subloc: "2km from NMIMS",
+    gender: "Girls", // Example gender
     messAvailable: "Yes", // Example mess availability
     furnished: "Fully-furnished",
     Meals: "2 times",

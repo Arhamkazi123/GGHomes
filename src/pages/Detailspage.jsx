@@ -153,17 +153,12 @@ const Detailspage = () => {
                 {property.gender}
               </p>
               <p>
-                <strong style={{ color: "#F2BA52" }}>Mess Available:</strong>{" "}
-                {property.messAvailable}
+                <strong style={{ color: "#F2BA52" }}>Meals included:</strong>{" "}
+                {property.Meals}
               </p>
             </div>
           </div>
-          <div>
-            <p>
-              <strong style={{ color: "#F2BA52" }}>Meals included:</strong>{" "}
-              {property.Meals}
-            </p>
-          </div>
+
           <h2 style={{ marginTop: "50px", marginBottom: "30px" }}>
             About <span style={{ color: "#F2BA52" }}>this</span> place
           </h2>
