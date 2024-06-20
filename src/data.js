@@ -2,10 +2,11 @@ import VGJ1 from "./images/VGJ1.jpeg";
 import VGJ2 from "./images/VGJ2.jpeg";
 import VGJ3 from "./images/VGJ3.jpeg";
 import VGJ4 from "./images/VGJ4.jpeg";
-import arihant1 from "./images/arihant1.jpeg";
-import arihant2 from "./images/arihant2.jpeg";
-import arihant3 from "./images/arihant3.jpeg";
-import arihant4 from "./images/arihant4.jpeg";
+import arihant1 from "./images/arihant11.jpeg";
+import arihant2 from "./images/arihant12.jpeg";
+import arihant3 from "./images/arihant13.jpeg";
+import arihant4 from "./images/arihant14.jpeg";
+import arihant5 from "./images/arihant15.jpeg";
 
 export const data = [
   {
@@ -31,7 +32,7 @@ export const data = [
   },
   {
     id: 2,
-    images: [arihant2, arihant3, arihant1, arihant4],
+    images: [arihant2, arihant3, arihant1, arihant4, arihant5],
     name: "VGJ- Arihant", // Array of image URLs
     rent: [
       { occupancy: "Double Occupancy", price: "₹27,000/mo*" },

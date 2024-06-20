@@ -120,7 +120,7 @@ Phone: ${formData.phone}
       <div className="form-container">
         <div className="header">
           <img src={newgghoes} alt="GG Homes" className="header-image" />
-          <h1>Explore Your Next Flat</h1>
+          <h1>Explore Your Next Property</h1>
         </div>
         <form onSubmit={handleSubmit}>
           <div className="form-group">
@@ -205,7 +205,7 @@ Phone: ${formData.phone}
               </div>
             )}
           <div className="form-group">
-            <label htmlFor="address">Address:</label>
+            <label htmlFor="address">Area preference:</label>
             <input
               type="text"
               id="address"
