@@ -1,19 +1,28 @@
-import Devprop1 from "./images/Devprop1.jpg";
-import Devprop2 from "./images/Devprop2.jpg";
-import Devprop3 from "./images/Devprop3.jpg";
-import Devprop4 from "./images/Devprop4.jpg";
+import arihant1 from "./images/arihant1.jpeg";
+import arihant2 from "./images/arihant2.jpeg";
+import arihant3 from "./images/arihant3.jpeg";
+import arihant4 from "./images/arihant4.jpeg";
 
 export const devdata = [
   {
-    id: 1,
-    images: [Devprop1, Devprop2],
-    name: "Arhamproperty 1", // Array of image URLs
+    id: 2,
+    images: [arihant2, arihant3, arihant1, arihant4],
+    name: "VGJ- Arihant", // Array of image URLs
+    rent: [
+      { occupancy: "Double Occupancy", price: "₹27,000/mo*" },
+      { occupancy: "Quad Occupancy", price: "₹22,000/mo*" },
+    ],
     houseType: "Hostel", // Example house type
-    price: 700, // Example price
-    location: "Rajasthan", // Example location
-    gender: "Male", // Example gender
+    price: 22000, // Example price
+    location: "Andheri West", // Example location
+    subloc: "2km from NMIMS",
+    gender: "Girls", // Example gender
     messAvailable: "Yes", // Example mess availability
-    furnished: "Fully-Furnished",
+    furnished: "Fully-furnished",
+    Meals: "2 times",
+    About:
+      "This flat is located in a very convenient location, 300m from Andheri train station, 2km from NMIMS College, Mumbai. This flat in Mumbai is also fully furnished",
+    amen: ["A/C", "Electricity", "Housekeeping", "Laundry", "Elevator", "CCTV"],
   },
   // {
   //   id: 2,

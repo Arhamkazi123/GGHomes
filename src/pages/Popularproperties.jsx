@@ -3,14 +3,14 @@ import { devdata } from "../Devdata.js";
 import "./Pop.css";
 import { RiArmchairFill } from "react-icons/ri";
 import { FaRupeeSign, FaTransgenderAlt } from "react-icons/fa";
-
 import { FaLocationDot } from "react-icons/fa6";
-
 import { useNavigate } from "react-router-dom";
 
 const Popularproperties = () => {
-  const nav = useNavigate();
-  const handlecardclick = () => {
+  const navigate = useNavigate();
+
+  const handlecardclick = (id) => {
+    localStorage.setItem("propertyId", id);
     navigate(`/details`);
   };
 
@@ -20,9 +20,13 @@ const Popularproperties = () => {
         Recommended By <span style={{ color: "#D9A86C" }}>Us</span>
       </h6>
 
-      <div className="property-list" onClick={handlecardclick}>
+      <div className="property-list">
         {devdata.map((item) => (
-          <div className="property-card" key={item.id}>
+          <div
+            className="property-card"
+            onClick={() => handlecardclick(item.id)} // This passes a function reference
+            key={item.id}
+          >
             <div className="image-container">
               <img
                 src={item.images[0]}

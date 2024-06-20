@@ -78,8 +78,8 @@ const Findflat = () => {
 
     if (validateForm()) {
       // Construct the WhatsApp message
-      const message = `Hi my
-name is ${formData.name}, I am looking for 
+      const message = `Hi my name is ${formData.name},
+      I am looking for 
 Property Type: ${formData.propertyType}
 Requirement: To ${formData.requirement}
 ${
