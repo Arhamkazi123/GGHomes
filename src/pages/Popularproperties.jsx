@@ -29,7 +29,7 @@ const Popularproperties = () => {
           >
             <div className="image-container">
               <img
-                src={item.images[0]}
+                src={item.images[0]} // Using the URL string from the images array
                 alt={`Property ${item.id} Image`}
                 className="property-image"
               />

@@ -141,11 +141,13 @@
   .rent-item {
     width: calc(50% - 10px); /* Set width for two columns */
   }
+  .overview-grid {
+    flex-direction: column; /* Display items in one column */
+  }
 
-  /* Overview */
   .overview-grid > div {
-    width: calc(50% - 10px); /* Display in two columns */
-    margin-right: 10px; /* Add space between columns */
+    width: 100%; /* Set width to 100% to make elements stack in one column */
+    margin-right: 0; /* Remove margin-right to remove space between columns */
   }
 
   .amenities-grid {
