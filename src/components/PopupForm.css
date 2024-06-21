@@ -129,9 +129,9 @@
   }
 
   .title-logo {
-    width: 60px; /* Reduce logo size */
-    height: 60px; /* Reduce logo size */
-    margin-right: 5px; /* Reduce margin for smaller screens */
+    width: 60px; 
+    height: 60px; 
+    margin-right: 5px; 
   }
 
   .popup-content input[type="text"],
@@ -168,7 +168,9 @@
   /* Reduce overall content width for a more compact popup */
   .ReactModal__Content {
     max-width: 90%;
-    width: calc(120vw - 50px); /* Use viewport width minus margins */
+    width: calc(100% - 40px); /* Adjust width to ensure it fits within the screen */
+    margin-left: auto; /* Automatically adjust left margin */
+    margin-right: auto; /* Automatically adjust right margin */
   }
   
 }
