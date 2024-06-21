@@ -2,22 +2,23 @@ import React, { useEffect, useState } from "react";
 import { data } from "../data.js";
 import "./Detailspage.css";
 import Navbar from "../components/Navbar.jsx";
-import { FaMapMarkerAlt } from "react-icons/fa";
 import Imageslider from "../components/Imageslider.jsx";
-import { FaKitchenSet } from "react-icons/fa6";
-import { FaParking } from "react-icons/fa";
-import { FaToilet, FaHotjar, FaHandHoldingWater } from "react-icons/fa";
+import { FaKitchenSet, FaElevator } from "react-icons/fa6";
+import { FaParking, FaMapMarkerAlt, FaBed } from "react-icons/fa";
+import {
+  FaToilet,
+  FaHotjar,
+  FaHandHoldingWater,
+  FaHireAHelper,
+  FaWifi,
+  FaCoffee,
+} from "react-icons/fa";
 import { BiCabinet } from "react-icons/bi";
-import { GiCooler } from "react-icons/gi";
-import { GiWashingMachine } from "react-icons/gi";
+import { GiWashingMachine, GiCooler, GiCctvCamera } from "react-icons/gi";
 import LeaveDetails from "../pages/Leavedetails.jsx"; // Import the LeaveDetails component
-import { FaBed } from "react-icons/fa";
 import Footer from "../pages/Footerpage/Footer.jsx";
 import { AiFillThunderbolt } from "react-icons/ai";
-import { FaHireAHelper } from "react-icons/fa";
 import { MdLocalLaundryService } from "react-icons/md";
-import { FaElevator } from "react-icons/fa6";
-import { GiCctvCamera } from "react-icons/gi";
 
 const Detailspage = () => {
   const [property, setProperty] = useState(null);
@@ -65,6 +66,8 @@ const Detailspage = () => {
     Laundry: <MdLocalLaundryService />,
     Elevator: <FaElevator />,
     CCTV: <GiCctvCamera />,
+    Wifi: <FaWifi />,
+    Coffee: <FaCoffee />,
   };
 
   return (

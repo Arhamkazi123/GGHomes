@@ -10,19 +10,19 @@ const Clientsserved = () => {
   // Function to animate the metrics from 0 to the desired values
   useEffect(() => {
     const totalPropertiesInterval = setInterval(() => {
-      if (totalProperties < 15) {
+      if (totalProperties < 10) {
         setTotalProperties((prevValue) => prevValue + 1);
       }
     }, 100); // Adjust the interval speed as needed
 
     const studentsServedInterval = setInterval(() => {
-      if (studentsServed < 15) {
+      if (studentsServed < 25) {
         setStudentsServed((prevValue) => prevValue + 1);
       }
     }, 100);
 
     const happyFacesInterval = setInterval(() => {
-      if (happyFaces < 20) {
+      if (happyFaces < 25) {
         setHappyFaces((prevValue) => prevValue + 1);
       }
     }, 100);

@@ -97,7 +97,7 @@ const PopupForm = ({ isOpen, onClose }) => {
           type="text"
           value={name}
           onChange={(e) => setName(e.target.value)}
-          placeholder="Name"
+          placeholder="Enter your name"
         />
         {errors.name && <p className="error">{errors.name}</p>}
         <select

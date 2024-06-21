@@ -261,8 +261,8 @@ const Home = () => {
               onChange={(e) => setGender(e.target.value)}
             >
               <option value="all">All Genders</option>
-              <option value="male">Male</option>
-              <option value="female">Female</option>
+              <option value="boys">Boys</option>
+              <option value="girls">Girls</option>
             </select>
           </div>
           <div className="house-type-selection">
