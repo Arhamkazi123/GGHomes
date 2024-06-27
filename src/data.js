@@ -106,10 +106,10 @@ export const data = [
     images: [monisha1, monisha2, monisha3, monisha4, monisha5],
     name: "Monisha Apartment", // Array of image URLs
     rent: [
-      { occupancy: "Double Attach Premium", price: "₹52,000/mo*" },
-      { occupancy: "Double Non Attach", price: "₹48,000/mo*" },
-      { occupancy: "Triple Attach", price: "₹50,000/mo*" },
-      { occupancy: "Triple Non Attach", price: "₹45,000/mo*" },
+      { occupancy: "Double Attach Premium", price: "₹6,25,000/an*" },
+      { occupancy: "Double Non Attach", price: "₹5,75,000/an*" },
+      { occupancy: "Triple Attach", price: "₹6,00,000/an*" },
+      { occupancy: "Triple Non Attach", price: "₹5,50,000/an*" },
     ],
     houseType: "Hostel", // Example house type
     price: 45000, // Example price
@@ -137,10 +137,10 @@ export const data = [
     images: [monisha2, monisha1, monisha3, monisha4, monisha5],
     name: "Monisha Apartment", // Array of image URLs
     rent: [
-      { occupancy: "Double Attach Premium", price: "₹52,000/mo*" },
-      { occupancy: "Double Non Attach", price: "₹48,000/mo*" },
-      { occupancy: "Triple Attach", price: "₹50,000/mo*" },
-      { occupancy: "Triple Non Attach", price: "₹45,000/mo*" },
+      { occupancy: "Double Attach Premium", price: "₹6,25,000/an*" },
+      { occupancy: "Double Non Attach", price: "₹5,75,000/an*" },
+      { occupancy: "Triple Attach", price: "₹6,00,000/an*" },
+      { occupancy: "Triple Non Attach", price: "₹5,50,000/an*" },
     ],
     houseType: "Hostel", // Example house type
     price: 45000, // Example price
@@ -167,8 +167,8 @@ export const data = [
     images: [unique1, unique2, unique3, unique4, unique5],
     name: "Unique Apartments", // Array of image URLs
     rent: [
-      { occupancy: "Double Attach Occupancy", price: "₹52,000/mo*" },
-      { occupancy: "Triple Non Attach", price: "₹45,000/mo*" },
+      { occupancy: "Double Attach Occupancy", price: "₹6,25,000/an*" },
+      { occupancy: "Triple Non Attach", price: "₹5,50,000/an*" },
     ],
     houseType: "Hostel", // Example house type
     price: 45000, // Example price
@@ -195,8 +195,8 @@ export const data = [
     images: [m4, m2, m3, m1, m5],
     name: "Meghdeep Building", // Array of image URLs
     rent: [
-      { occupancy: "Double Attach Premium", price: "₹62,500/mo*" },
-      { occupancy: "Double Non Attach", price: "₹58,000/mo*" },
+      { occupancy: "Double Attach Premium", price: "₹7,50,000/an*" },
+      { occupancy: "Double Non Attach", price: "₹7,00,000/an*" },
     ],
     houseType: "Hostel", // Example house type
     price: 58000, // Example price
