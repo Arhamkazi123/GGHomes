@@ -159,17 +159,19 @@ const Detailspage = () => {
                       <span style={{ color: "#F2BA52" }}>{rentItem.price}</span>
                     </p>
                   )}
-                  {rentItem.occupancy.includes("Double Attach") && (
+                  {rentItem.occupancy.includes("Double Attach Occupancy") && (
                     <p>
                       <FaBed color=" #132F40" /> X 2 Attach{" "}
                       <span style={{ color: "#F2BA52" }}>{rentItem.price}</span>
                     </p>
                   )}
                   {rentItem.occupancy.includes("Double Attach Small") && (
-                    <p>
-                      <FaBed color=" #132F40" /> X 2 Attach Small{" "}
-                      <span style={{ color: "#F2BA52" }}>{rentItem.price}</span>
-                    </p>
+                    <>
+                      <p>
+                        <FaBed color=" #132F40" /> X 2 Non Attach
+                      </p>
+                      <span>{rentItem.price}</span>
+                    </>
                   )}
                   {rentItem.occupancy.includes("Double Non Attach") && (
                     <p>
@@ -189,7 +191,7 @@ const Detailspage = () => {
                       <span style={{ color: "#F2BA52" }}>{rentItem.price}</span>
                     </p>
                   )}
-                  {rentItem.occupancy.includes("Triple") && (
+                  {rentItem.occupancy.includes("Triple Occupancy") && (
                     <p>
                       <FaBed color=" #132F40" /> X 3{" "}
                       <span style={{ color: "#F2BA52" }}>{rentItem.price}</span>

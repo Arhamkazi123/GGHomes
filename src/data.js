@@ -14,6 +14,21 @@ import mahel4 from "./images/mahel4.jpg";
 import mahel5 from "./images/mahel5.jpg";
 import mahel6 from "./images/mahel6.jpg";
 import mahel7 from "./images/mahel7.jpg";
+import monisha1 from "./images/monisha1.jpeg";
+import monisha2 from "./images/monisha2.jpeg";
+import monisha3 from "./images/monisha3.jpeg";
+import monisha4 from "./images/monisha4.jpeg";
+import monisha5 from "./images/monisha5.jpeg";
+import unique1 from "./images/unique1.jpeg";
+import unique2 from "./images/unique2.jpeg";
+import unique3 from "./images/unique3.jpeg";
+import unique4 from "./images/unique4.jpeg";
+import unique5 from "./images/unique5.jpeg";
+import m1 from "./images/meghdeep1.jpeg";
+import m2 from "./images/meghdeep2.jpeg";
+import m3 from "./images/meghdeep3.jpeg";
+import m4 from "./images/meghdeep4.jpeg";
+import m5 from "./images/meghdeep5.jpeg";
 
 export const data = [
   {
@@ -62,7 +77,7 @@ export const data = [
     images: [mahel2, mahel1, mahel3, mahel4, mahel5, mahel6, mahel7],
     name: "Venus Apartment", // Array of image URLs
     rent: [
-      { occupancy: "Double Attach", price: "₹45,000/mo*" },
+      { occupancy: "Double Attach Occupancy", price: "₹45,000/mo*" },
       { occupancy: "Double Non Attach", price: "₹40,000/mo*" },
       { occupancy: "Triple Occupancy", price: "₹37,000/mo*" },
     ],
@@ -71,6 +86,123 @@ export const data = [
     location: "Vile Parle", // Example location
     subloc: "1.5km from NMIMS",
     gender: "Boys", // Example gender
+    messAvailable: "No", // Example mess availability
+    furnished: "Fully-furnished",
+    Meals: "3 times",
+    About:
+      "This flat is located in a very convenient location, 1km from Andheri train station, 1.5km from NMIMS College, Mumbai. This flat in Mumbai is also fully furnished",
+    amen: [
+      "A/C",
+      "Electricity",
+      "Housekeeping",
+      "Laundry",
+      "Elevator",
+      "Wifi",
+      "Coffee",
+    ],
+  },
+  {
+    id: 4,
+    images: [monisha1, monisha2, monisha3, monisha4, monisha5],
+    name: "Monisha Apartment", // Array of image URLs
+    rent: [
+      { occupancy: "Double Attach Premium", price: "₹52,000/mo*" },
+      { occupancy: "Double Non Attach", price: "₹48,000/mo*" },
+      { occupancy: "Triple Attach", price: "₹50,000/mo*" },
+      { occupancy: "Triple Non Attach", price: "₹45,000/mo*" },
+    ],
+    houseType: "Hostel", // Example house type
+    price: 45000, // Example price
+    location: "Andheri West", // Example location
+    subloc: "1.5km from NMIMS",
+    gender: "Boys", // Example gender
+    messAvailable: "No", // Example mess availability
+    furnished: "Fully-furnished",
+    Meals: "3 times",
+    About:
+      "This flat is located in a very convenient location, 1km from Andheri train station, 1.5km from NMIMS College, Mumbai. This flat in Mumbai is also fully furnished",
+    amen: [
+      "A/C",
+      "Electricity",
+      "Housekeeping",
+      "Laundry",
+      "Elevator",
+      "Wifi",
+      "Coffee",
+    ],
+  },
+
+  {
+    id: 5,
+    images: [monisha2, monisha1, monisha3, monisha4, monisha5],
+    name: "Monisha Apartment", // Array of image URLs
+    rent: [
+      { occupancy: "Double Attach Premium", price: "₹52,000/mo*" },
+      { occupancy: "Double Non Attach", price: "₹48,000/mo*" },
+      { occupancy: "Triple Attach", price: "₹50,000/mo*" },
+      { occupancy: "Triple Non Attach", price: "₹45,000/mo*" },
+    ],
+    houseType: "Hostel", // Example house type
+    price: 45000, // Example price
+    location: "Andheri West", // Example location
+    subloc: "1.5km from NMIMS",
+    gender: "Girls", // Example gender
+    messAvailable: "No", // Example mess availability
+    furnished: "Fully-furnished",
+    Meals: "3 times",
+    About:
+      "This flat is located in a very convenient location, 1km from Andheri train station, 1.5km from NMIMS College, Mumbai. This flat in Mumbai is also fully furnished",
+    amen: [
+      "A/C",
+      "Electricity",
+      "Housekeeping",
+      "Laundry",
+      "Elevator",
+      "Wifi",
+      "Coffee",
+    ],
+  },
+  {
+    id: 6,
+    images: [unique1, unique2, unique3, unique4, unique5],
+    name: "Unique Apartments", // Array of image URLs
+    rent: [
+      { occupancy: "Double Attach Occupancy", price: "₹52,000/mo*" },
+      { occupancy: "Triple Non Attach", price: "₹45,000/mo*" },
+    ],
+    houseType: "Hostel", // Example house type
+    price: 45000, // Example price
+    location: "Vile Parle", // Example location
+    subloc: "1.5km from NMIMS",
+    gender: "Boys", // Example gender
+    messAvailable: "No", // Example mess availability
+    furnished: "Fully-furnished",
+    Meals: "3 times",
+    About:
+      "This flat is located in a very convenient location, 1km from Andheri train station, 1.5km from NMIMS College, Mumbai. This flat in Mumbai is also fully furnished",
+    amen: [
+      "A/C",
+      "Electricity",
+      "Housekeeping",
+      "Laundry",
+      "Elevator",
+      "Wifi",
+      "Coffee",
+    ],
+  },
+  {
+    id: 7,
+    images: [m4, m2, m3, m1, m5],
+    name: "Meghdeep Building", // Array of image URLs
+    rent: [
+      { occupancy: "Double Attach Premium", price: "₹62,500/mo*" },
+      { occupancy: "Double Non Attach", price: "₹58,000/mo*" },
+    ],
+    houseType: "Hostel", // Example house type
+    price: 58000, // Example price
+    location: "Vile Parle", // Example location
+    subloc: "1.5km from NMIMS",
+    gender: "Girls", // Example gender
     messAvailable: "No", // Example mess availability
     furnished: "Fully-furnished",
     Meals: "3 times",
