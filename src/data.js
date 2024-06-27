@@ -62,7 +62,8 @@ export const data = [
     images: [mahel2, mahel1, mahel3, mahel4, mahel5, mahel6, mahel7],
     name: "Venus Apartment", // Array of image URLs
     rent: [
-      { occupancy: "Double Occupancy", price: "₹40,000/mo*" },
+      { occupancy: "Double Attach", price: "₹45,000/mo*" },
+      { occupancy: "Double Non Attach", price: "₹40,000/mo*" },
       { occupancy: "Triple Occupancy", price: "₹37,000/mo*" },
     ],
     houseType: "Hostel", // Example house type

@@ -99,7 +99,7 @@ const Detailspage = () => {
             Rent Structure
           </h2>
 
-          <div className="rent-structure">
+          {/* <div className="rent-structure">
             <div className="column">
               {property.rent.map((rentItem, index) => (
                 <div key={index} className="rent-item">
@@ -124,6 +124,80 @@ const Detailspage = () => {
                   {rentItem.occupancy.includes("Triple") && (
                     <p>
                       <FaBed color=" #132F40" /> X 3{" "}
+                      <span style={{ color: "#F2BA52" }}>{rentItem.price}</span>
+                    </p>
+                  )}
+                  {rentItem.occupancy.includes("Quad") && (
+                    <p>
+                      <FaBed color=" #132F40" /> X 4{" "}
+                      <span style={{ color: "#F2BA52" }}>{rentItem.price}</span>
+                    </p>
+                  )}
+                </div>
+              ))}
+            </div>
+          </div> */}
+          <div className="rent-structure">
+            <div className="column">
+              {property.rent.map((rentItem, index) => (
+                <div key={index} className="rent-item">
+                  {rentItem.occupancy.includes("Single") && (
+                    <p>
+                      <FaBed color=" #132F40" /> X 1{" "}
+                      <span style={{ color: "#F2BA52" }}>{rentItem.price}</span>
+                    </p>
+                  )}
+                  {rentItem.occupancy.includes("Double Occupancy") && (
+                    <p>
+                      <FaBed color=" #132F40" /> X 2{" "}
+                      <span style={{ color: "#F2BA52" }}>{rentItem.price}</span>
+                    </p>
+                  )}
+                  {rentItem.occupancy.includes("Double Attach Premium") && (
+                    <p>
+                      <FaBed color=" #132F40" /> X 2 Premium{" "}
+                      <span style={{ color: "#F2BA52" }}>{rentItem.price}</span>
+                    </p>
+                  )}
+                  {rentItem.occupancy.includes("Double Attach") && (
+                    <p>
+                      <FaBed color=" #132F40" /> X 2 Attach{" "}
+                      <span style={{ color: "#F2BA52" }}>{rentItem.price}</span>
+                    </p>
+                  )}
+                  {rentItem.occupancy.includes("Double Attach Small") && (
+                    <p>
+                      <FaBed color=" #132F40" /> X 2 Attach Small{" "}
+                      <span style={{ color: "#F2BA52" }}>{rentItem.price}</span>
+                    </p>
+                  )}
+                  {rentItem.occupancy.includes("Double Non Attach") && (
+                    <p>
+                      <FaBed color=" #132F40" /> X 2 Non Attach{" "}
+                      <span style={{ color: "#F2BA52" }}>{rentItem.price}</span>
+                    </p>
+                  )}
+                </div>
+              ))}
+            </div>
+            <div className="column">
+              {property.rent.map((rentItem, index) => (
+                <div key={index} className="rent-item">
+                  {rentItem.occupancy.includes("Triple Attach") && (
+                    <p>
+                      <FaBed color=" #132F40" /> X 3 Attach{" "}
+                      <span style={{ color: "#F2BA52" }}>{rentItem.price}</span>
+                    </p>
+                  )}
+                  {rentItem.occupancy.includes("Triple") && (
+                    <p>
+                      <FaBed color=" #132F40" /> X 3{" "}
+                      <span style={{ color: "#F2BA52" }}>{rentItem.price}</span>
+                    </p>
+                  )}
+                  {rentItem.occupancy.includes("Triple Non Attach") && (
+                    <p>
+                      <FaBed color=" #132F40" /> X 3 Non Attach{" "}
                       <span style={{ color: "#F2BA52" }}>{rentItem.price}</span>
                     </p>
                   )}
