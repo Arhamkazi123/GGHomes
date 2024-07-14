@@ -30,7 +30,7 @@ const About = () => {
           <Accordion
             title={
               <>
-                <span style={{ color: "#D9A86C" }}>NO</span> BROKERAGES/FEES{" "}
+                <span style={{ color: "#D9A86C" }}>Primary </span>Location Lists{" "}
                 {/* <span style={{ color: "#D9A86C" }}>NO</span> FEES */}
                 <FaAngleDown style={{ marginLeft: "270px" }} />
               </>
@@ -62,7 +62,7 @@ const About = () => {
 const Accordion = ({ title, index, isActive, toggleAccordion }) => {
   const accordionContent = {
     0: "Choose verified spaces only where you are comfortably home.",
-    1: "No charges, No Brokerages. Enjoy hassle-free living with GG HOMES",
+    1: "Discover prime spots, verified amenities. Live stress-free with GG HOMES.",
     2: "A dedicated support team for students 24/7. We offer counselling services for free.",
   };
 
