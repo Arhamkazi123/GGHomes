@@ -111,16 +111,6 @@ const Home = () => {
     navigate(`/details`);
   };
 
-  // const filteredData = data.filter((item) => {
-  //   const matchesLocation =
-  //     item.location.toLowerCase() === searchLocation.toLowerCase();
-  //   const matchesPrice = item.price <= maxPrice;
-  //   const matchesGender =
-  //     gender === "all" ? true : item.gender.toLowerCase() === gender;
-  //   const matchesHouseType =
-  //     houseType === "all" ? true : item.houseType.toLowerCase() === houseType;
-  //   return matchesLocation && matchesPrice && matchesGender && matchesHouseType;
-  // });
   const filteredData = data.filter((item) => {
     const matchesLocation =
       item.location.toLowerCase() === searchLocation.toLowerCase();
@@ -189,51 +179,6 @@ const Home = () => {
             ))}
           </select>
 
-          {/* budget comes here */}
-          {/* <div className="price-range-slider">
-            <label htmlFor="maxPrice"> Budget</label>
-            <button
-              style={{ fontSize: "18px", padding: "7px 8px" }}
-              type="button"
-              className="btn btn-white btn-budget"
-              onClick={() => setShowModal(true)}
-            >
-              Select Range
-            </button>
-          </div>
-
-          <div
-            className={`modal ${showModal ? "show" : ""}`}
-            style={{ display: showModal ? "block" : "none" }}
-            tabIndex="-1"
-          >
-            <div className="modal-dialog modal-sm">
-              <div className="modal-content">
-                <div className="modal-header">
-                  <h5 className="modal-title">From</h5>
-                  <button
-                    type="button"
-                    className="btn-close"
-                    onClick={() => setShowModal(false)}
-                  ></button>
-                </div>
-                <div className="modal-body">
-                  <label htmlFor="maxPriceModal">
-                    Rs {formatPrice(maxPrice)}/- month
-                  </label>
-                  <input
-                    type="range"
-                    id="maxPriceModal"
-                    min={0}
-                    max={100000}
-                    value={maxPrice}
-                    onChange={(e) => setMaxPrice(parseInt(e.target.value))}
-                    className="range-slider"
-                  />
-                </div>
-              </div>
-            </div>
-          </div> */}
           <div className="budget-selection">
             <label htmlFor="budget">Budget:</label>
             <select

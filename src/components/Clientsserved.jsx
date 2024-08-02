@@ -2,18 +2,16 @@ import React, { useEffect, useState } from "react";
 import "./clientsserved.css";
 
 const Clientsserved = () => {
-  // State variables to track the values for each metric
   const [totalProperties, setTotalProperties] = useState(0);
   const [studentsServed, setStudentsServed] = useState(0);
   const [happyFaces, setHappyFaces] = useState(0);
 
-  // Function to animate the metrics from 0 to the desired values
   useEffect(() => {
     const totalPropertiesInterval = setInterval(() => {
       if (totalProperties < 10) {
         setTotalProperties((prevValue) => prevValue + 1);
       }
-    }, 100); // Adjust the interval speed as needed
+    }, 100);
 
     const studentsServedInterval = setInterval(() => {
       if (studentsServed < 25) {
@@ -27,14 +25,12 @@ const Clientsserved = () => {
       }
     }, 100);
 
-    // Clear intervals when values reach the desired numbers
     return () => {
       clearInterval(totalPropertiesInterval);
       clearInterval(studentsServedInterval);
       clearInterval(happyFacesInterval);
     };
-  }, [totalProperties, studentsServed, happyFaces]); // useEffect will run whenever these values change
-
+  }, [totalProperties, studentsServed, happyFaces]);
   return (
     <div className="metric-container">
       {" "}
